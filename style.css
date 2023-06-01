@@ -1,0 +1,278 @@
+/* =================== Java Style ====================== */
+.text {
+    color: red;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.color {
+    color: red;
+}
+
+/* ================= Defaults ======================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.188);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ===================================================== */
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+ul.topnav {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+ul.topnav li {
+    list-style: none;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+ul.topnav li.drop {
+    display: none;
+}
+
+/* =========================== section 1 ================== */
+
+div.section1 {
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.402);
+    width: 100%;
+}
+
+.section1 .section1img {
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+
+}
+
+.section1img img {
+    width: 500px;
+    height: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section1 .section1h1 {
+    width: 30%;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section1 .section1h1 h1 {
+    font-size: 20px;
+}
+
+
+
+/* ========================= Section2 ======================*/
+
+.section2 h2 {
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline black;
+}
+
+.section2 ul.ulsection2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+ul.ulsection2 li {
+    padding: 5px;
+}
+
+/* =================== Section3 ======================== */
+.section3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.188);
+
+}
+
+.section3 img {
+    width: 50%;
+    height: 500px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+
+}
+
+.section3 div {
+    margin: auto;
+}
+
+.section3 h2 {
+    color: red;
+    text-decoration: underline black;
+    padding-bottom: 10px;
+}
+
+.section3 ul li {
+    padding: 2px;
+}
+
+/* ===================== Footer ===================== */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+footer div h3 {
+    padding: 20px;
+    text-decoration: underline white;
+}
+
+footer div img {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+/* =============== Mobile ============================ */
+
+@media (max-width: 694px) {
+    ul.topnav {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 10px;
+    }
+
+    ul.topnav li:not(:nth-child(2)) {
+        display: none;
+    }
+
+    ul.topnav li.drop {
+        display: block;
+        padding-right: 10px;
+    }
+
+    /* ========================= section1 ============ */
+
+    div.section1 {
+        flex-direction: column;
+    }
+
+    .section1 .section1h1 {
+        width: 100%;
+    }
+
+    .section1h1 h1 {
+        width: 100%;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .section1 .section1img {
+        margin: auto;
+        width: 100%;
+    }
+
+    .section1 img {
+        height: 400px;
+        margin: auto;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* ================== Section2 ================== */
+    .section2 ul.ulsection2 {
+        display: block;
+        margin-left: 30px;
+    }
+
+    ul.ulsection2 li {
+        padding: 5px;
+    }
+
+    /* ================= Section3 ==================== */
+    .section3 {
+        flex-direction: column;
+    }
+
+    .section3 img {
+        margin: auto;
+        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    div.h2section {
+        margin-left: 10px;
+        width: 90%;
+    }
+
+    div.h2section h2 {
+        text-align: center;
+    }
+
+    /* =================== Footer ==================== */
+
+    footer {
+        flex-direction: column;
+    }
+
+    /* ================ Java ==================== */
+    ul.topnav.responsive li.drop {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.responsive {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.topnav.responsive li {
+        display: inline;
+
+    }
+
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+
+    ul.topnav.responsive li.first {
+        display: none;
+    }
+
+
+}
